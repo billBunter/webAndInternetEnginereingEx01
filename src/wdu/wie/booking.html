@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="William, Denis">
+    <meta name="keywords" content="HTML">
+    <meta name="description" content="booking site, exercise 01">
+    <meta name="date" content="19-03-2019">
+    <title>Flight booking</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table style="width:520px">
+        <tr>
+            <td colspan="5">
+                <img src="banner.jpg" alt="banner" style="width: 100%;height: 250px">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Departure:</td>
+            <td>
+                <input type="date" id="departure" name="departure">
+            </td>
+            <td colspan="2">
+                <input type="radio" name="depAirport" value="rome" checked> Rome
+                <input type="radio" name="depAirport" value="milan">Milan
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Return:</td>
+            <td>
+                <input type="date" id="return" name="return">
+            </td>
+            <td colspan="2">
+                <input type="radio" name="retAirport" value="rome"> Rome
+                <input type="radio" name="retAirport" value="milan">Milan
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Carrier:</td>
+            <td>
+                <select name="carrier">
+                    <option value="alitalia">Alitalia</option>
+                    <option value="easyJet">EasyJet</option>
+                    <option value="euroWings">EuroWings</option>
+                </select>
+            </td>
+            <td colspan="2">
+                <input type="checkbox" id="direct" name="direct">
+                Direct connection only
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Passengers:</td>
+            <td>
+                <select name="passengers">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    <option value="six">6</option>
+                </select>
+            </td>
+            <td>Class:</td>
+            <td>
+                <select name="class">
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first">Fist Class</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="1" rowspan="3">Personal data</td>
+            <td colspan="1">Name</td>
+            <td colspan="1">
+                <input type="text" id="name" size="18">
+            </td>
+            <td colspan="1">Surname</td>
+            <td colspan="1">
+                <input type="text" id="surname" size="18">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">Email</td>
+            <td colspan="3">
+                <input type="text" id="email" size="56">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <textarea rows="5" cols="52" name="comment" >Comment:</textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <input type="submit" value="Submit">
+            </td>
+            <td colspan="2">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+
+
+
+    </table>
+</form>
+</body>
+</html>
